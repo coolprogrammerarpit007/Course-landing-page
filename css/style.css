@@ -1,0 +1,245 @@
+/* Overriding default style and set padding and margin to nothing */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* White text throuhhout */
+
+body {
+  font-family: "lato", sans-serif;
+  color: #fff;
+}
+
+/* Make all link text black with no text decoration */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* 
+      All image sizes must not be larger than parent container
+*/
+
+img {
+  width: 100%;
+}
+
+/* Centres it, sets a maimum width and makes sure element can flow past it */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+/* 
+Sets background color, height and padding
+ */
+
+.navbar {
+  background-color: aquamarine;
+}
+
+/*
+ Sets the font-size, reduce font-weight, adds margin and padding
+  */
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+/* 
+Now displaying both h1 elements and nav-links side by side
+ */
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adjusting our navigation links side by side and removing list style  */
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+/* 
+    Changing both the color of links to white adding padding as well as margin
+*/
+
+.navbar a {
+  color: #fff;
+  padding: 9px;
+  margin: 0 10px;
+}
+
+/* Adding the hover effect */
+
+.navbar a:hover {
+  color: #986765;
+  border-bottom: 3px solid #986765;
+}
+
+/* Ending of Navigation bar section */
+
+/* *********************************** */
+
+/* Styling Our Showcase Section */
+
+/* Setting the height and background of showcase section */
+
+.showcase {
+  height: 300px;
+  background-color: aquamarine;
+}
+
+/* Styling our text */
+
+/* Add margin below to the text */
+
+.showcase p {
+  margin-bottom: 30px;
+}
+
+/* Add a shadow below the image */
+
+.showcase img {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Adds some padding on the form content */
+
+.showcase form {
+  padding-left: 7px;
+}
+
+/* 
+Setting the grid container and creating two sections
+ */
+
+.grid {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* Adding Space between the navigation area and the showcase area */
+
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+}
+
+.grid-item-2 {
+  top: 5px;
+}
+
+.grid-item-2 img {
+  height: 300px;
+}
+
+/* Styling form-input and buttons */
+
+.showcase input[type="email"] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background-color: #9867c5;
+  border: none;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Changing the font of supporting text */
+
+.showcase-form {
+  margin: auto;
+}
+
+/* check typeface and it's size */
+
+.litte-info {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+}
+
+/* Applying CSS Styling to the stats section */
+
+/* Centers the container, sets a maximum width*/
+.lower-container {
+  margin: 120px auto;
+  padding: 0;
+  max-width: 1400px;
+}
+
+/* Targets all h3 with class of title */
+.title {
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* Display horizontally, put a little space around them */
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Add some padding around the container. Align text centrally */
+.stats {
+  padding: 45px 50px;
+  text-align: center;
+}
+
+/* Set margin and width */
+.stat {
+  margin: 0 30px;
+  text-align: center;
+  width: 800px;
+}
+
+/* Targets the paragraphs with class name of text */
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;
+}
